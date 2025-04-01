@@ -1,0 +1,52 @@
+/* Hero Section Styling */
+.hero{
+    width: 100%; /* Full width of the screen */
+    min-height: 100vh; /* Minimum height to cover the viewport */
+    background: linear-gradient(rgba(55, 58, 0, 0.7),rgba(8,0,58,0.7)),url('../../assets/Hero1.jpg'); /* Background with overlay */
+    background-size: cover; /* Ensure background image covers entire section */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Text color set to white */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Text Container Styling */
+.hero-text{
+    text-align: center; /* Center align text */
+    max-width: 800px; /* Set a max width for better readability */
+}
+
+/* Hero Section Heading Styling */
+.hero-text h1{
+    font-size: 60px; /* Large font size for main heading */
+    font-weight: 600; /* Set font weight to bold */
+}
+
+/* Hero Section Paragraph Styling */
+.hero-text p{
+    max-width: 700px; /* Limit width for readability */
+    margin: 10px auto 20px; /* Add spacing */
+    line-height: 1.4; /* Improve text readability */
+}
+
+/* Responsive Styling for Screens 850px or Less */
+@media (max-width: 850px){
+    .hero-text h1{
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+}
+
+/* Responsive Styling for Screens 650px or Less */
+@media (max-width: 650px){
+    .hero-text h1{
+        font-size: 30px; /* Further reduce heading size */
+        max-width: 400px; /* Adjust width to fit smaller screens */
+        margin: auto; /* Center align */
+    }
+    
+    .hero-text p{
+        font-size: 14px; /* Reduce font size for readability */
+        margin: 15px auto 30px; /* Adjust spacing */
+    }
+}

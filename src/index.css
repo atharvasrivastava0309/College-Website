@@ -1,0 +1,67 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Poppins:wght@500&display=swap');
+
+/* Global Reset and Default Styling */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding/borders do not affect element width/height */
+    font-family: "Fredoka", sans-serif; /* Default font family */
+}
+
+/* Body Styling */
+body {
+    background: #F5F5F5; /* Light gray background for a clean look */
+}
+
+/* Anchor Tag Styling */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+    line-height: 1; /* Ensure consistent spacing */
+    cursor: pointer; /* Indicate clickable behavior */
+}
+
+/* Responsive Container */
+.container {
+    padding-left: 10%; /* Add spacing from the left */
+    padding-right: 10%; /* Add spacing from the right */
+}
+
+/* Button Styling */
+.btn {
+    background: #fff; /* White background */
+    color: black; /* Black text color */
+    padding: 8px 25px; /* Padding for better appearance */
+    font-size: 16px; /* Readable font size */
+    border-radius: 30px; /* Rounded edges for a modern look */
+    cursor: pointer; /* Pointer cursor for clickability */
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    display: inline-flex; /* Allow flexible alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Button Icon Styling */
+.btn img {
+    width: 20px; /* Set fixed width for icons */
+    margin-left: 10px; /* Space between text and icon */
+}
+
+/* Dark Themed Button */
+.dark-btn {
+    background: #212EA0; /* Dark blue background */
+    color: #fff; /* White text color */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 5%; /* Reduce left padding for smaller screens */
+        padding-right: 5%; /* Reduce right padding for smaller screens */
+    }
+    .btn {
+        padding: 14px 22px; /* Adjust button padding for smaller screens */
+    }
+}

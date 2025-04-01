@@ -1,0 +1,86 @@
+/* Navbar Styling */
+nav{
+    width: 100%; /* Full width navbar */
+    background: #cdcdcd; /* Default background color */
+    color: black; /* Text color */
+    padding: 4px 0; /* Padding for spacing */
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10; /* Ensures navbar stays on top */
+}
+
+/* Logo Styling */
+.logo{
+    width: 180px; /* Set logo size */
+}
+
+/* Navigation Links Styling */
+nav ul li{
+    display: inline-block; /* Display links inline */
+    list-style: none; /* Remove bullet points */
+    margin : 5px 20px; /* Spacing between links */
+    font-size: 16px; /* Set font size */
+}
+
+/* Sticky Navbar Styling */
+.dark-nav{
+    background: lightskyblue; /* Change background color when scrolled */
+    transition: 0.5s; /* Smooth transition effect */
+}
+
+/* Menu Icon Styling (Hidden by Default) */
+.menu-icon{
+    display: none;
+}
+
+/* Responsive Styling for Screens 1000px or Less */
+@media (max-width: 1000px){
+    .logo{
+        width: 140px; /* Reduce logo size for smaller screens */
+    }
+    nav ul li{
+        margin: 10px 15px; /* Adjust spacing */
+    }
+}
+
+/* Responsive Styling for Screens 857px or Less */
+@media (max-width: 857px){
+    nav{
+        padding: 15px 0;
+        color: white;
+    }
+    
+    /* Mobile Navigation Menu Styling */
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212EA0; /* Background color for mobile menu */
+        z-index: -1; /* Initially hides the menu */
+        width: 202px; /* Set menu width */
+        padding-top: 70px; /* Space from the top */
+        transition: 0.5s; /* Smooth transition for menu */
+    }
+    
+    nav ul li{
+        display: block; /* Display menu items as block elements */
+        margin: 25px 40px; /* Adjust spacing */
+    }
+    
+    /* Show Menu Icon for Mobile Screens */
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer; /* Enable pointer cursor for interaction */
+    }
+    
+    /* Hide Mobile Menu by Default */
+    .hide-mobile-menu{
+        right: -202px; /* Move menu off-screen */
+    }
+}

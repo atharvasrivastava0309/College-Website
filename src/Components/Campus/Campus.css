@@ -1,0 +1,32 @@
+/* Campus Section Styles */
+.campus {
+    margin: 80px auto; /* Adds vertical spacing and centers the section */
+    width: 90%; /* Restricts width to 90% of the container */
+    text-align: center; /* Centers the text content */
+}
+
+/* Gallery Container */
+.gallery {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns images vertically */
+    justify-content: space-between; /* Spreads images evenly */
+    margin-bottom: 40px; /* Adds spacing below the gallery */
+}
+
+/* Gallery Images */
+.gallery img {
+    width: 31%; /* Ensures three images fit evenly */
+    border-radius: 10px; /* Adds rounded corners to images */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 800px) {
+    .gallery {
+        flex-direction: column; /* Stacks images vertically on small screens */
+    }
+    
+    .gallery img {
+        width: 100%; /* Makes images take full width */
+        margin: 20px; /* Adds spacing between stacked images */
+    }
+}

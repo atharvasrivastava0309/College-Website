@@ -1,0 +1,30 @@
+/* Footer container styling */
+.footer {
+    margin: 10px auto; /* Centers the footer with vertical margin */
+    display: flex; /* Aligns elements horizontally */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Distributes content evenly */
+    border-top: 1px solid #797979; /* Adds a subtle top border */
+    padding: 15px 0; /* Adds vertical spacing */
+}
+
+/* Styling for footer list items */
+.footer ul li {
+    list-style: none; /* Removes bullet points */
+    display: inline; /* Displays items in a row */
+    margin-left: 20px; /* Adds spacing between items */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .footer {
+        display: block; /* Stacks elements vertically */
+        text-align: center; /* Centers text content */
+    }
+    .footer ul li {
+        margin: 10px; /* Adjusts spacing for better layout */
+    }
+    .footer ul {
+        margin-top: 10px; /* Adds spacing above the list */
+    }
+}

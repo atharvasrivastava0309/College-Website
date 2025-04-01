@@ -1,0 +1,20 @@
+/*
+ * Title Component Styles
+ * Styles for the Title component, ensuring consistent typography and alignment.
+ */
+
+ .title {
+    text-align: center; /* Centers the text */
+    color: #212EA0; /* Sets primary color for subtitle */
+    font-size: 15px; /* Subtitle font size */
+    font-weight: 600; /* Makes subtitle text bold */
+    text-transform: uppercase; /* Converts subtitle to uppercase */
+    margin: 70px 0 30px; /* Adds spacing around the title block */
+}
+
+.title h2 {
+    font-size: 32px; /* Sets main title font size */
+    color: #000F38; /* Sets main title color */
+    margin-top: 5px; /* Adds spacing between subtitle and title */
+    text-transform: none; /* Keeps title text in original casing */
+}

@@ -1,0 +1,26 @@
+/* Video Player Container Styles */
+.video-player {
+    position: fixed; /* Ensures the video player overlays the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Dark overlay for better focus on the video */
+    z-index: 100; /* Ensures the video player appears above other elements */
+    display: flex; /* Centers the video player */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video Element Styles */
+.video-player video {
+    width: 90%; /* Makes the video responsive */
+    max-width: 414px; /* Restricts video width for better user experience */
+    height: auto; /* Maintains aspect ratio */
+    border: 4px solid #fff; /* Adds a white border for better visibility */
+}
+
+/* Hidden State for Video Player */
+.video-player.hide {
+    display: none; /* Hides the video player when inactive */
+}

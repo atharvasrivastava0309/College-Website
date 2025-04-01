@@ -1,0 +1,119 @@
+/* Container for testimonials section */
+.testimonials {
+    margin: 80px auto; /* Centers the section with top and bottom margin */
+    position: relative; /* Enables positioning of child elements */
+    padding: 0 80px; /* Adds horizontal padding for spacing */
+}
+
+/* Styling for navigation buttons (Next & Back) */
+.next-btn, .back-btn {
+    top: 50%; /* Positions the buttons at the vertical center */
+    right: 0; /* Places the button at the right edge */
+    transform: translateY(-50%); /* Ensures perfect vertical centering */
+    position: absolute; /* Allows free positioning within .testimonials */
+    width: 50px; /* Sets the size of buttons */
+    border-radius: 50%; /* Makes buttons circular */
+    padding: 15px; /* Adds spacing inside buttons */
+    background: #212EA0; /* Sets button background color */
+    cursor: pointer; /* Changes cursor to pointer for interactivity */
+}
+
+/* Adjusts back button position to the left side */
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+/* Slider container styling */
+.slider {
+    overflow: hidden; /* Prevents elements from overflowing the container */
+}
+
+/* Styling for the sliding list inside the slider */
+.slider ul {
+    display: flex; /* Aligns items in a row */
+    width: 200%; /* Ensures smooth sliding effect */
+    overflow-x: hidden; /* Hides horizontal overflow */
+    transition: 0.5s; /* Smooth transition effect */
+}
+
+/* Individual slide container */
+.slider ul li {
+    list-style: none; /* Removes bullet points */
+    width: 50%; /* Each slide takes half of the container */
+    display: flex; /* Ensures proper alignment */
+    padding: 20px; /* Adds spacing around slides */
+}
+
+/* Styling for each testimonial card */
+.slide {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Adds a shadow for depth */
+    padding: 40px; /* Inner spacing for content */
+    border-radius: 10px; /* Rounds the corners */
+    color: #676767; /* Text color */
+    line-height: 1.4; /* Improves readability */
+}
+
+/* Styling for user images in testimonials */
+.slide img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%; /* Makes images circular */
+    margin-right: 10px; /* Adds spacing next to the image */
+    border: 4px solid #212EA0; /* Blue border around images */
+}
+
+/* User info container */
+.user-info {
+    display: flex; /* Aligns elements in a row */
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 20px; /* Adds spacing below */
+    font-size: 15px; /* Sets font size */
+}
+
+/* Styling for user name */
+.user-info h3 {
+    color: #212EA0; /* Blue text for emphasis */
+}
+
+/* Styling for user role or designation */
+.user-info span {
+    font-weight: 600; /* Makes text bold */
+}
+
+/* Responsive adjustments for screens up to 800px */
+@media (max-width: 800px) {
+    .testimonials {
+        padding: 0 40px; /* Reduces horizontal padding for smaller screens */
+    }
+    .next-btn, .back-btn {
+        padding: 10px;
+        width: 35px; /* Reduces button size for better fit */
+    }
+    .testimonials ul li {
+        padding: 10px; /* Reduces slide padding */
+    }
+    .slide {
+        padding: 10px; /* Reduces padding within slides */
+    }
+    .slide img {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #212EA0; /* Adjusts border size */
+    }
+}
+
+/* Additional adjustments for screens up to 600px */
+@media (max-width: 600px) {
+    .user-info {
+        display: block; /* Stacks user info elements vertically */
+        margin-bottom: 10px;
+        font-size: 12px; /* Decreases font size for better fit */
+    }
+    .user-info h3 {
+        font-size: 16px; /* Adjusts heading size */
+    }
+    .slider p {
+        font-size: 12px; /* Adjusts text size for readability */
+    }
+}
