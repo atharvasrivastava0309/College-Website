@@ -1,4 +1,3 @@
-College Website
 Overview
 This is a fully responsive and interactive college website built using React.js. It showcases various aspects of Poornima College, including its programs, testimonials, gallery, and contact information. The website ensures smooth navigation with a sticky navbar and animated transitions.
 Features
@@ -36,9 +35,6 @@ Project Structure
 │── 📂 public
 │── package.json
 │── README.md
-Code Highlights
-•	App.jsx: Manages component structure and state for the video player.
-•	Navbar.jsx: Implements a sticky navbar with smooth scrolling.
 •	Testimonials.jsx: Displays dynamic testimonials in a carousel format.
 •	Contact.jsx: Contains a working contact form.
 •	Well-structured CSS: Ensures responsiveness and modern UI.
