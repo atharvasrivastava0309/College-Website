@@ -24,21 +24,22 @@ The website ensures smooth navigation with a **sticky navbar** and **animated tr
 - **Navigation**: React-Scroll  
 
 ## Project Structure
-📂 CollegeWebsite
-│── 📂 src # Source files
-│ │── 📂 Components # Reusable UI components
-│ │ │── 📂 Navbar # Navigation bar component
-│ │ │── 📂 Hero # Hero section component
-│ │ │── 📂 Programs # Programs section component
-│ │ │── 📂 Title # Section titles and headings
-│ │ │── 📂 About # About section component
-│ │ │── 📂 Campus # Campus gallery and information
-│ │ │── 📂 Testimonials # Student and alumni testimonials
-│ │ │── 📂 Contact # Contact form component
-│ │ │── 📂 Footer # Footer section
-│ │ │── 📂 VideoPlayer # Interactive video player component
-│ │── App.jsx # Main React component
-│ │── index.js # Entry point of the React app
-│── 📂 public # Static files (index.html, favicon, etc.)
-│── package.json # Project dependencies and scripts
-│── README.md # Documentation
+CollegeWebsite/
+│── src/
+│   ├── Components/
+│   │   ├── Navbar/
+│   │   ├── Hero/
+│   │   ├── Programs/
+│   │   ├── Title/
+│   │   ├── About/
+│   │   ├── Campus/
+│   │   ├── Testimonials/
+│   │   ├── Contact/
+│   │   ├── Footer/
+│   │   ├── VideoPlayer/
+│   ├── App.jsx
+│   ├── index.js
+│── public/
+│── package.json
+│── README.md
+
